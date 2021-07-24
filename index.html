@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chatbot</title>
+	<link rel="icon" href="bot.png" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<section class="section-1">
+		<div class="chat-box" id="chat-box">
+			<div class="chat-header">NishanBD</div>
+			<div id="container" class="container">
+				<div id="chat" class="chat">
+					<div id="messages" class="messages"></div>
+					<div class="text-content ">
+						<input id="input" type="text" placeholder="  Say something........           " autocomplete="off" autofocus="true" />
+					</div>
+					
+				</div>
+			</div>
+			<div class="btn">
+				<div class="btn-send"  id="send"  onclick="sendMsg()">Send</div>
+				<div class="btn-send" id="clear" onclick="clearField()">Clear</div>
+				<div class="btn-leave" onclick="closeChat()">Close Chat</div>
+			</div>
+		</div>
+		<div class="chat-us" onclick="openChat()">
+			Chat
+		</div>
+	</section>
+</body>
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="constants.js"></script>
+<script type="text/javascript" src="speech.js"></script>
+
+</html>
